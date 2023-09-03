@@ -1,0 +1,614 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,300&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+body{
+    background-color:rgba(0,0,0,.1)
+}
+
+:root {
+    --bs-blue: #0d6efd;
+    --bs-indigo: #6610f2;
+    --bs-purple: #6f42c1;
+    --bs-pink: #d63384;
+    --bs-red: #dc3545;
+    --bs-orange: #fd7e14;
+    --bs-yellow: #ffc107;
+    --bs-green: #198754;
+    --bs-teal: #20c997;
+    --bs-cyan: #0dcaf0;
+    --bs-white: #fff;
+    --bs-gray: #6c757d;
+    --bs-gray-dark: #343a40;
+    --bs-primary: #0d6efd;
+    --bs-secondary: #6c757d;
+    --bs-success: #198754;
+    --bs-info: #0dcaf0;
+    --bs-warning: #ffc107;
+    --bs-danger: #dc3545;
+    --bs-light: #f8f9fa;
+    --bs-dark: #212529;
+}
+html{
+    font-size:16px;
+}
+.home{
+    width:100%;
+    height:100vh;
+    background-image: url('../img/hero-bg.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.home::after{
+    content:"";
+    width:100%;
+    height:100%;
+    background-color:rgba(0,0,0,.5);
+    position: absolute;
+    top:0;
+    left:0;
+}
+.testing-active::after{
+  content: "";
+  position: absolute;
+  top:100%;
+  left:0%;
+  width:100%;
+  height: 2px;
+  background-color: #ffffff;
+}
+.testing::after{
+  content: "";
+  position: absolute;
+  top:100%;
+  left:0%;
+  width:0%;
+  height: 2px;
+  background-color: #ffffff;
+  transition: all .5s linear;
+}
+
+.navbar li:hover .testing::after{
+  width: 100%;
+}
+.home h2{
+    font-size:4.5rem;
+    margin-top:-5rem;
+}
+.home h3::after{
+  content: "";
+  font-size:2rem;
+  animation: complecated 10s  linear infinite;
+}
+@keyframes complecated{
+  1%{
+    content: "F|";
+  }
+  2%{
+    content: "Fr|";
+  }
+  3%{
+    content: "Fre|";
+  }
+  4%{
+    content: "Free|";
+  }
+  5%{
+    content: "Freel|";
+  }
+  6%{
+    content: "Freela|";
+  }
+  7%{
+    content: "Freelac|";
+  }
+  14%{
+    content: "Freelace|";
+  }
+  8%{
+    content: "Freelacer|";
+  }
+  9%{
+    content: "Freelacer |";
+  }
+  10%{
+    content: "Freelacer |";
+  }
+  11%{
+    content: "Freelacer |";
+  }
+  12%{
+    content: "Freelacer |";
+  }
+  13%{
+    content: "Freelacer|";
+  }
+  14%{
+    content: "Freelace|";
+  }
+  15%{
+    content: "Freelac|";
+  }
+  16%{
+    content: "Freela|";
+  }
+  17%{
+    content: "Freel|";
+  }
+  18%{
+    content: "Free|";
+  }
+  19%{
+    content: "Free|";
+  }
+  20%{
+    content: "Fre|";
+  }
+  21%{
+    content: "Fr|";
+  }
+  22%{
+    content: "F|";
+  }
+  23%{
+    content: "|";
+  }
+  24%{
+    content: "|";
+  }
+  25%{
+    content: "|";
+  }
+  26%{
+    content:"D|"'
+  }
+  27%{
+    content: "De|";
+  }
+  28%{
+    content: "Des|";
+  }
+  29%{
+    content: "Desg|";
+  }
+  30%{
+    content:"Desgi|";
+  }
+  31%{
+    content: "Desgin|";
+  }
+  32%{
+    content: "Desgine|";
+  }
+  33%{
+    content: "Desginer|";
+  }
+  34%{
+    content: "Desginer |";
+  }
+  35%{
+    content: "Desginer |";
+  }
+  36%{
+    content: "Desginer |";
+  }
+  37%{
+    content: "Desginer |";
+  }
+  38%{
+    content: "Desginer|";
+  }
+  39%{
+    content: "Desgine|";
+  }
+  40%{
+    content: "Desgin|";
+  }
+  41%{
+    content: "Desgi|";
+  }
+  42%{
+    content: "Desg|";
+  }
+  43%{
+    content: "Des|";
+  }
+  44%{
+    content: "De|";
+  }
+  45%{
+    content: "D|";
+  }
+  46%{
+    content: "|";
+  }
+  47%{
+    content: "|";
+  }
+  48%{
+    content: "|";
+  }
+  50%{
+    content: "|";
+  }
+  51%{
+    content: "P|";
+  }
+  52%{
+    content: "Ph|";
+  }
+  53%{
+    content: "Phot|";
+  }
+  54%{
+    content: "Photo|";
+  }
+  55%{
+    content: "Photog|";
+  }
+  56%{
+    content: "Photogr|";
+  }
+  57%{
+    content: "Photogra|";
+  }
+  58%{
+    content: "Photograp|";
+  }
+  59%{
+    content: "Photograph|";
+  }
+  60%{
+    content: "Photographe|";
+  }
+  61%{
+    content: "Photographer|";
+  }
+  62%{
+    content: "Photographer |";
+  }
+  63%{
+    content: "Photographer |";
+  }
+  64%{
+    content: "Photographer |";
+  }
+  65%{
+    content: "Photographer|";
+  }
+  66%{
+    content: "Photographe|";
+  }
+  67%{
+    content: "Photograph|";
+  }
+  68%{
+    content: "Photograp|";
+  }
+  69%{
+    content: "Photogra|";
+  }
+  70%{
+    content: "Photogra|";
+  }
+  71%{
+    content: "Photog|";
+  }
+  72%{
+    content: "Photo|";
+  }
+  73%{
+    content: "Phot|";
+  }
+  74%{
+    content: "Pho|";
+  }
+  75%{
+    content: "Ph|";
+  }
+  76%{
+    content: "P|";
+  }
+  77%{
+    content: "|";
+  }
+  77%{
+    content: "|";
+  }
+  77%{
+    content: "|";
+  }
+  78%{
+    content: "D|";
+  }
+  79%{
+    content: "De|";
+  }
+  80%{
+    content: "Dev|";
+  }
+  81%{
+    content: "Deve|";
+  }
+  82%{
+    content: "Devel|";
+  }
+  83%{
+    content: "Develo|";
+  }
+  84%{
+    content: "Develop|";
+  }
+  85%{
+    content: "Develope|";
+  }
+  85%{
+    content: "Developer|";
+  }
+  85%{
+    content: "Developer |";
+  }
+  86%{
+    content: "Developer |";
+  }
+  87%{
+    content: "Developer |";
+  }
+  88%{
+    content: "Developer |";
+  }
+  88%{
+    content: "Developer|";
+  }
+  89%{
+    content: "Developer|";
+  }
+  89%{
+    content: "Develope|";
+  }
+  90%{
+    content: "Develop|";
+  }
+  91%{
+    content: "Develo|";
+  }
+  91%{
+    content: "Devel|";
+  }
+  91%{
+    content: "Deve|";
+  }
+  92%{
+    content: "Dev|";
+  }
+  93%{
+    content: "De|";
+  }
+  94%{
+    content: "D|";
+  }
+  95%{
+    content: "|";
+  }
+  96%{
+    content: "|";
+  }
+  97%{
+    content: "|";
+  }
+  98%{
+    content: "|";
+  }
+  99%{
+    content: "|";
+  }
+  100%{
+    content: "|";
+  }
+}
+.title h3{
+    position: relative;
+    font-family: 'Poppins', sans-serif;
+    font-size:3rem;
+}
+.title h3::after{
+    content:"";
+    width:9rem;
+    height: 3px;
+    position:absolute;
+    top:100%;
+    left:0;
+    background-color:blue;
+}
+.about-content p{
+    font-size:1.3rem;
+    font-family: 'Poppins', sans-serif;
+    color:rgba(128, 128, 128, 0.783)
+}
+.title-section p{
+    position: relative;
+}
+.title-section span{
+    display: block;
+    width:3rem;
+    height: .35rem;
+    background-color: #0d6efd;
+    margin:auto;
+}
+.iconStyle{
+    border: 10px solid rgb(25, 0, 255);
+    padding:5px ;
+    background-color:rgb(255, 255, 255);
+}
+.card:hover .iconStyle{
+    background-color:rgb(25, 0, 255);
+    border: 10px solid rgba(169, 164, 204, 0.926);
+
+}
+.card-style{
+    width:30%;
+    margin:20px 0;
+}
+.info{
+  width:100%;
+  height:400px;
+  background-image:url("../img/post-3.jpg");
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position:relative;
+}
+.info::after{
+  content: "";
+  position: absolute;
+  top:0;
+  left:0;
+  width:100%;
+  height:100%;
+  background-color:rgba(0, 0, 255, 0.647)
+}
+.info-section{
+  margin:6rem 0;
+  color:white;
+  z-index:1;
+}
+.testStyleIcon{
+  border: 10px solid rgba(255, 255, 255, 0.629);
+  padding:20px;
+}
+.card{
+  overflow: hidden;
+  position: relative;
+}
+.Blog .card img{
+  transition: all .40s linear;
+  position: relative;
+ 
+}
+.Blog .card .iconstyle{
+  border: 3px solid blue;
+  color:blue;
+  position: absolute;
+  right:.5rem;
+  bottom: 3rem;
+  font-size:25px;
+  
+}
+.Blog .card img:hover{
+  transform: scale(1.1);
+  overflow: hidden;
+}
+.leader{
+    width:100%;
+    height:80vh;
+    background-image: url(../img/overlay-bg.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+    overflow: hidden;
+}
+.leader::after{
+  content: "";
+  position: absolute;
+  top:0;
+  left:0;
+  width:100%;
+  height: 100%;
+  background-color: rgba(0, 0, 255, 0.512);
+}
+.Contact{
+  width:100%;
+  background-image: url(../img/overlay-bg.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  position: relative;
+  z-index: -2;
+}
+.Contact::after{
+  content: "";
+  width:100%;
+  height:100%;
+  position: absolute;
+  top:0;
+  left:0;
+  background-color: #0066ff97;
+  z-index:-1;
+}
+.moving-content-one{
+  z-index: 1000;
+  position: absolute;
+  top:50%;
+  left:130%;
+  transform: translate(-50%,-50%);
+  animation: movingOne 5s 1s linear infinite ;
+}
+@keyframes movingOne{
+  0%{
+      left:100%;
+  }
+
+  10%{
+      left:50%;
+  }
+  90%{
+    left:50%;
+  }
+  100%{
+    left:0%;
+    display: none;
+  }
+}
+.moving-content-two{
+  z-index: 1000;
+  position: absolute;
+  top:50%;
+  left:130%;
+  transform: translate(-50%,-50%);
+  animation: movingTwo 5s 6s linear infinite ;
+
+}
+@keyframes movingTwo{
+  0%{
+    left:130%;
+}
+  10%{
+    left:50%;
+  }
+  90%{
+    left:50%;
+  }
+  100%{
+    left:-100%;
+  }
+}
+
+
+
+
+@media only screen and (max-width:768px) {
+    html{
+        font-size:12px;
+    }
+    .card-style{
+        width:100%;
+        margin:20px 0 ;
+        border-radius: 20px;
+        padding:30px 0;
+    }
+    .info{
+      height:auto;
+      padding: 100px 0;
+    }
+    .info-section{
+      margin:0 0;
+    }
+}
